@@ -27,7 +27,7 @@ function App() {
     }, []);
 
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
         {loader? <Loader/> :
             user?
                 <>
@@ -36,7 +36,12 @@ function App() {
                     <TaskList/>
                 </> : <SignIn/>
         }
-    </>
+        <footer className="footer mt-auto">
+            <div className="d-flex align-items-center justify-content-center container  border-top">
+                <p className="text-muted mb-0">Copyright &copy; 2023 Lakith Rathnayake. All Right Reserved</p>
+            </div>
+        </footer>
+    </div>
   )
 }
 

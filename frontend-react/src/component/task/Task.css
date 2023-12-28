@@ -1,6 +1,7 @@
 .Task i:hover {
     cursor: pointer;
     color: red;
+    text-shadow: 0 0 6px red;
 }
 
 .Task:hover {
@@ -10,4 +11,9 @@
 .Task label {
     cursor: pointer;
     user-select: none;
+}
+
+.Task input:checked+label {
+    text-decoration: line-through;
+    color: gray;
 }
